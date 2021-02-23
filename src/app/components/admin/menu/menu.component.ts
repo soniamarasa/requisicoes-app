@@ -11,11 +11,13 @@ import firebase from 'firebase';
   styleUrls: ['./menu.component.css']
 })
 export class MenuComponent implements OnInit {
+  isCollapsed: boolean = true;
   user: Observable<firebase.User>;
   constructor(private authServ: AuthenticationService, private router: Router) { }
 
   ngOnInit() {
     this.user = this.authServ.authUser();
+    
   }
 
   sair() {

@@ -2,6 +2,6 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 @import "~@ng-select/ng-select/themes/default.theme.css";
 
-p-dialog {
-    min-width: 600px;
+.p-dialog {
+    overflow-y: auto !important;
 }
